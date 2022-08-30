@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Car Rental</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<!-- navbar section starts -->
+    <section class="header">
+    
+        <div class="demo">
+          <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+          <a href="index.html"><i class="logo fas fa-car-alt"><span>Car Rental</span></i>
+          </a> 
+        </div>
+        <div class="search">
+            <input type="search" name="search" placeholder="Search">
+        </div>
+        
+        <div class="header-container">
+         
+          <div class="navf">
+            <a href="index.html">Home</a>
+           </div>
+              <div class="navcon">               
+                 <div class="dropdown">
+                  <a href="#"class="drop-btn">Car listing</a>       
+                  <div class="dropdown-content">
+                    <a href="category1.html">Suv</a>
+                    <a href="category2.html">LuxuryCars</a>
+                    <a href="category3.html">Pickup Truck</a>
+                  </div>
+                 </div> 
+               </div>
+        <div class="nave">
+          <div class="login" id="#login-btn">
+            <a href="#" onclick="login()"><i class="fas fa-user"></i> Login</a>        
+          </div>
+        </div> 
+   </div>  
+</section>
+
+<!--loginform-->
+<div class="form-popup">
+  <span id="close-login-form" onclick="closebtn()">X</span>
+  <form action="">
+    <h3>User login</h3>
+    <input type="text" name="username" placeholder="Username."required>
+     <input type="password" name="password" placeholder="Password"required>
+     <!-- <p>forget your password<a href="#">Click here</a></p> -->
+     <input type="submit" name="submit" value="Login">
+      <p>or login with</p>
+      <div class="buttons">
+           <a href="#" >Facebook</a>
+            <a href="#" class="btn">Google</a>
+          </div>
+          <p>Don't have an account <a href="#"onclick="signup()">create one</a></p>
+    </form>
+</div> 
+
+<!-- signup form -->
+<div class="form-signup">
+  <span id="close-signup-form" onclick="closesignup()">X</span>
+  <form action="">
+    <h3>Sign Up</h3>
+    <input type="text" name="fullname" placeholder="Fullname"required>
+    <input type="email"  placeholder="Email Address"required>
+    <input type="text" placeholder="Address"required>
+    <input type="tel" placeholder="Contact Number"required> 
+    <input type="password" name="password" placeholder="Password"required>
+     <!-- <p>forget your password<a href="#">Click here</a></p> -->
+     <input type="submit" name="submit" value="signup">
+      <!-- <p>or login with</p> -->
+      <!-- <div class="buttons">
+           <a href="#" >Facebook</a>
+            <a href="#" class="btn">Google</a>
+          </div> -->
+          <!-- <p>Don't have an account <a href="#">create one</a></p> -->
+    </form>
+</div> 
+
+<!-- slider section starts -->
+<section class="slider">
+  <div class="slides-container">
+    <div class="slides">
+      <img src="Assets/Image/whitefordssuv.png">     
+    </div><div class="slide-caption"> 
+      <h5>CONNECTING YOU TO</h5>
+      <p>THE BIGGEST BRANDS</p>
+      </div>
+
+    <div class="slides">
+      <img src="Assets/Image/greysuv.png">
+      <div class="slide-caption">
+        <h5>CONNECTING YOU TO</h5>
+      <p>THE BIGGEST BRANDS</p>
+      </div>
+    </div>
+    <div class="slides">
+      <img src="Assets/Image/suv3.png">
+      <div class="slide-caption">
+        <h5>CONNECTING YOU TO</h5>
+        <p>THE BIGGEST BRANDS</p>
+        
+      </div>
+    </div>
+  
+    <a class="prev" onclick="plus(1)"><i class="fa fa-angle-left"></i></a>
+    <a class="next" onclick="plus(-1)"><i class="fa fa-angle-right"></i></a>
+  </div>
+ 
+</section>
+
+<!-- How it works -->
+<section class="ride">
+  <div class="ride-heading">
+    <span>How It Works</span>
+    <h1>Rent With 3 Easy Steps</h1>
+    
+  </div>
+  <div class="ride-container">
+    <div class="ride-box">
+      <i class="fas fa-map-marker-alt"></i>
+      <h2>Choose A location</h2>
+      <p>Simply, first chose a destination that you want to book car for.</p>
+    </div>
+    <div class="ride-box"> 
+      <i class="fas fa-calendar-check"></i> 
+      <h2>Pick-up Date</h2>
+      <p>Pick a date that you want to rent car for a particular period of a time. </p>
+    </div>
+    <div class="ride-box">
+      <i class="fas fa-calendar"></i>
+      <h2>Book A Car</h2>
+      <p>Book a car that you like and is best suited for your trip.</p>
+    </div>
+  </div>
+</section>
+<!-- card section starts -->
+<section class="Card">
+  <div class="card-header">
+    <p class="card-header-text">Featured Products</p>
+  </div>
+  <!-- <a href="#"><p class="card-view-more">--View more--</p></a> -->
+  <div class="card-container">
+  <div class="card-body">
+    <P class="category-title">Luxury cars</P>
+    <div class="border"></div>
+    <P class="card-t">Ferrari</P>
+     <div class="card-img">    
+      <img src="Assets/Image/car2.png" alt="">     
+      </div>
+      <div class="card-detail text-center">
+                 <img src="Assets/Image/gear.png"><p>Automatic</p>
+                 <p><i class="fa fa-user" aria-hidden="true"></i>4 People</p>
+                 <p><i class="fas fa-shopping-bag"></i>2 Bags</p>
+      </div>  
+        <div class="card-btn">
+         <a href="book.html">Book a car</a>
+       </div>
+    </div>
+    <div class="card-body">
+      <P class="category-title">Luxury cars</P>
+      <div class="border"></div>
+      <P class="card-t">White AudiA8</P>
+       <div class="card-img">    
+        <img src="Assets/Image/car3.png" alt="">     
+        </div>
+        <div class="card-detail text-center">
+                   <img src="Assets/Image/gear.png"><p>Automatic</p>
+                   <p><i class="fa fa-user" aria-hidden="true"></i>4 People</p>
+                   <p><i class="fas fa-shopping-bag"></i>2 Bags</p>
+        </div>  
+          <div class="card-btn">
+           <a href="book.html">Book a car</a>
+         </div>
+      </div>
+      <div class="card-body">
+        <P class="category-title">Luxury cars</P>
+        <div class="border"></div>
+        <P class="card-t">Mustang Gt</P>
+         <div class="card-img">    
+          <img src="Assets/Image/Mustang1.png" alt="">     
+          </div>
+          <div class="card-detail text-center">
+                     <img src="Assets/Image/gear.png"><p>Automatic</p>
+                     <p><i class="fa fa-user" aria-hidden="true"></i>4 People</p>
+                     <p><i class="fas fa-shopping-bag"></i>2 Bags</p>
+          </div>  
+            <div class="card-btn">
+             <a href="book.html">Book a car</a>
+           </div>
+        </div>
+        </div>  
+      </div>
+  
+</div>    
+  </div> 
+</div>
+</section>
+<!-- Icons section starts -->
+<section class="icons-container">
+  <div class="icons">
+    <i class="fas fa-car"></i>
+    <div class="icons-content">
+      <h3>1500+</h3>
+      <p>cars rented</p>
+    </div>
+  </div>
+  <div class="icons">
+    <i class="fas fa-users"></i>
+    <div class="icons-content">
+      <h3>100+</h3>
+      <p>happy clients</p>
+    </div>
+  </div>
+  <div class="icons">
+    <i class="fas fa-car"></i>
+    <div class="icons-content">
+      <h3>40+</h3>
+      <p>cars varieties</p>
+    </div>
+  </div>
+  <div class="icons">
+    <i class="fas fa-car"></i>
+    <div class="icons-content">
+      <h3>500+</h3>
+      <p>car reviews</p>
+    </div>
+  </div>
+</section>
+<!-- Testimonials section starts -->
+<section class="testimonials">
+  <h1 class="testimonials-heading"> Testimonials </h1>
+  <div class="testimonials-container">
+    <div class="testimonials-cards">
+      <img src="Assets/Image/Raju.png" alt="">
+      <div class="content">
+          <p>Car Rental made my journey smooth as silk from the hiring process to the destination. 
+            I was looking for a car to travel 110km west of Kathmandu with my family. 
+            They suggested me comfortable car yet cheaper with super nice and kind driver. 
+            The driver reached right in time early in the morning and headed to our destination.</p>
+          <h3>Raju Bhattarai</h3>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+          </div>
+      </div>
+    </div>
+    <div class="testimonials-cards">
+      <img src="Assets/Image/kamal1.png" alt="">
+      <div class="content">
+          <p>Professional service and good attitude toward customers is why this company is standing-out from 
+            rest of the rental companies. They provided me a good car according to my needs which helped me to 
+            minimise the rental cost. The car was clean, comfortable and the driver was helpful and punctual or 
+            even earlier than the prescribed time.</p>
+          <h3>Kamal Baraili</h3>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+          </div>
+      </div>
+    </div>
+    <div class="testimonials-cards">
+      <img src="Assets/Image/Bhanu.png" alt="">
+      <div class="content">
+          <p> We've used ASAP Car Rentals on multiple occasions and its always been a wise decision. 
+            They are punctual, the staff friendly and most of all, it's completely safe. 
+            Believe, it's rare to find seat belts in rented/reserved vehicles in Nepal, but apart 
+            from well functioning seat belts, the vehicles are clean and well tuned.</p>
+          <h3>Bhanubhakta Belbase</h3>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="Newsletter">
+  <div>
+  <h3>subscribe for latest updates</h3>
+  <p>We send great deals and latest auto news to our subscribed users very week.</p>
+   <form action="">
+     <input type="email" placeholder="Enter your email.">
+     <input type="submit" value="subscribe">
+    </form>
+    <div>
+</section>
+<!-- footer section starts -->
+<section class="footer">
+  <div class="footer-container">
+    <div class="Aboutus">
+       <h2>About us </h2>
+       <P class="footer-desc">Car rental is a web based system for a
+        company that rents out cars.You can rent car for a short period of time or
+        for few days or week.</P>
+    </div>
+
+    <div class="Quicklinks ">
+        <h2>Quicklinks</h2>               
+        <ul>
+          <li> <a href="home.html">Home</a>
+          <!-- <li><a href="#">About Us</a></li> -->
+          <!-- <li><a href="#">Carlisting</a></li> -->
+          <li><a href="contact.html">Contact Us</a></li>
+          <!-- <li><a href="#">FAQs</a></li></li> -->
+        </ul>
+
+    </div>
+    <div class="contact-info">     
+        <h2>Contact Us</h2>
+        <ul>
+          <li><span><i class="fa fa-map-marker" aria-hidden="true"></i>
+            07- Budhanilkantha Kathmandu,Nepal</span></li>
+          <li><span> <i class="fa fa-phone" aria-hidden="true"></i>            9841056411</span></li>
+          <li><span><i class="fa fa-envelope" aria-hidden="true"></i>
+            carrental@gmail.com</span></li>
+        </ul>
+    </div>
+  </div>
+</section>
+<div class="copyright-Text">
+  <p>Copyright © 2021 Car Rental. All Rights Reserved.</p>
+</div>
+<!-- <script src="index.js"></script> -->
+<script type="text/javascript" src="index.js"></script> 
+</body>
+</html>

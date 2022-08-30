@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Car listings</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body>
+<!-- navbar section starts -->
+<section class="header">
+    <div class="demo">
+      <a href="index.html"><i class="logo fas fa-car-alt"><span>Car Rental</span></i>
+      </a> 
+    </div>
+    <div class="search">
+        <input type="search" name="search" placeholder="Search">
+    </div>
+    
+    <div class="header-container">
+      <div class="navf">
+        <a href="index.html">Home</a>
+       </div>
+          <div class="navcon">               
+             <div class="dropdown">
+              <a href="#"class="drop-btn">Car listing</a>       
+              <div class="dropdown-content">
+                <a href="category1.html">Suv</a>
+                <a href="category2.html">LuxuryCars</a>
+                <a href="category3.html">Pickup Truck</a>
+              </div>
+             </div> 
+           </div>
+    <div class="nave">
+      <div class="login" id="#login-btn">
+        <a href="#" onclick="login()"><i class="fas fa-user"></i> Login</a>        
+      </div>
+    </div> 
+</div>  
+</section>
+<!--loginform-->
+<div class="form-popup">
+    <span id="close-login-form" onclick="closebtn()">X</span>
+    <form action="">
+      <h3>User login</h3>
+      <input type="text" name="username" placeholder="Username."required>
+       <input type="password" name="password" placeholder="Password"required>
+       <!-- <p>forget your password<a href="#">Click here</a></p> -->
+       <input type="submit" name="submit" value="Login">
+        <p>or login with</p>
+        <div class="buttons">
+             <a href="#" >Facebook</a>
+              <a href="#" class="btn">Google</a>
+            </div>
+            <p>Don't have an account <a href="#"onclick="signup()">create one</a></p>
+      </form>
+  </div> 
+  
+  <!-- signup form -->
+  <div class="form-signup">
+    <span id="close-signup-form" onclick="closesignup()">X</span>
+    <form action="">
+      <h3>Sign Up</h3>
+      <input type="text" name="fullname" placeholder="Fullname"required>
+      <input type="email"  placeholder="Email Address"required>
+      <input type="text" placeholder="Address"required>
+      <input type="tel" placeholder="Contact Number"required> 
+      <input type="password" name="password" placeholder="Password"required>
+       <!-- <p>forget your password<a href="#">Click here</a></p> -->
+       <input type="submit" name="submit" value="signup">
+        <!-- <p>or login with</p> -->
+        <!-- <div class="buttons">
+             <a href="#" >Facebook</a>
+              <a href="#" class="btn">Google</a>
+            </div> -->
+            <!-- <p>Don't have an account <a href="#">create one</a></p> -->
+      </form>
+  </div> 
+
+ <!-- All cars  -->
+<section class="Allcars">
+    <h1>Pickup Trucks</h1>
+    <div class="Allcarscontainer">
+        <div class="cardlist"> 
+            <p class="carlist-title">Chevrolet Pickup</p>
+            <div class="cardlist-img">
+                <img src="Assets/Image/chevroletpickup.png">
+            </div>        
+             <div class="carlist-desc">
+                <img src="Assets/Image/gear.png"><p>Manual</p>
+                 <p><i class="fa fa-user" aria-hidden="true"></i>4 People</p>
+                 <p><i class="fas fa-shopping-bag"></i>2 Bags</p>
+             </div>
+            <div class="carbook-btn">
+                <a href="book.html">Book a car</a>
+            </div>
+        </div>
+
+        <div class="cardlist"> 
+            <p class="carlist-title">Toyota crew cab</p>
+            <div class="cardlist-img">
+                <img src="Assets/Image/toyotacrewcab(1).png">
+            </div>        
+             <div class="carlist-desc">
+                <img src="Assets/Image/gear.png"><p>Manual</p>
+                 <p><i class="fa fa-user" aria-hidden="true"></i>4 People</p>
+                 <p><i class="fas fa-shopping-bag"></i>2 Bags</p>
+             </div>
+            <div class="carbook-btn">
+                <a href="book.html">Book a car</a>
+            </div>
+        </div>
+        <div class="cardlist"> 
+            <p class="carlist-title">Blue Ford Pickup</p>
+            <div class="cardlist-img">
+                <img src="Assets/Image/bluefordpickup.png">
+            </div>        
+             <div class="carlist-desc">
+                <img src="Assets/Image/gear.png"><p>Manual</p>
+                 <p><i class="fa fa-user" aria-hidden="true"></i>4 People</p>
+                 <p><i class="fas fa-shopping-bag"></i>2 Bags</p>
+             </div>
+            <div class="carbook-btn">
+                <a href="book.html">Book a car</a>
+            </div>
+        </div>
+        
+        <div class="cardlist"> 
+            <p class="carlist-title">Black Crew cab</p>
+            <div class="cardlist-img">
+                <img src="Assets/Image/suv3.png">
+            </div>        
+             <div class="carlist-desc">
+                <img src="Assets/Image/gear.png"><p>Automatic</p>
+                 <p><i class="fa fa-user" aria-hidden="true"></i>4 People</p>
+                 <p><i class="fas fa-shopping-bag"></i>2 Bags</p>
+             </div>
+            <div class="carbook-btn">
+               <a href="book.html">Book a car</a>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- footer section starts -->
+  <section class="footer">
+    <div class="footer-container">
+      <div class="Aboutus width-30">
+         <h2>About us </h2>
+         <P class="footer-desc">Car rental is a web based system for a
+          company that rents out cars.You can rent car for a short period of time or
+          for few days or week. </P>
+      </div>
+  
+      <div class="Quicklinks width-30">
+          <h2>Quicklinks</h2>               
+          <ul>
+            <li> <a href="home.html">Home</a>
+            <!-- <li><a href="#">About Us</a></li> -->
+            <!-- <li><a href="#">Carlisting</a></li> -->
+            <li><a href="contact.html">Contact Us</a></li>
+            <!-- <li><a href="#">FAQs</a></li></li> -->
+          </ul>
+  
+      </div>
+      <div class="contact-info width-30">     
+          <h2>Contact Us</h2>
+          <ul>
+            <li><span><i class="fa fa-map-marker" aria-hidden="true"></i>
+              07- Budhanilkantha Katmandu,Nepal</span></li>
+            <li><span> <i class="fa fa-phone" aria-hidden="true"></i>            9841056411</span></li>
+            <li><span><i class="fa fa-envelope" aria-hidden="true"></i>
+              carrental@gmail.com</span></li>
+          </ul>
+      </div>
+    </div>
+  </section> 
+  <div class="copyright-Text">
+    <p>Copyright © 2022 Car Rental. All Rights Reserved.</p>
+  </div>  
+  <script type="text/javascript" src="index.js"></script> 
+</body>
+</html>
